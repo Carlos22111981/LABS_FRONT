@@ -12,6 +12,7 @@
     --cor-painel-mais-vendiddos-grad: #f4bebe;
     --cor-painel-shadow: #999;
     --cor-painel-titulo:  rgba(0, 0, 0, 0.5);
+    --cor-painel-base: rgba(255,255,255,0.8);
 
 
 }
@@ -184,6 +185,7 @@ header {
     width: 130px;
     margin: 2px;
     padding-bottom: 10px;
+    transition: 0.7s ease-out;
 }
 
 
@@ -261,6 +263,22 @@ footer {
     box-shadow: inset 2px 2px 4px var(--cor-painel-shadow);
 
 }
+
+.painel li:hover {
+    background-color: var(--cor-painel-base);
+    box-shadow: 0 0 5px var(--cor-base);
+    transition: 0.7s ease-in;
+    transform: scale(1.05) rotate(-3deg);
+
+}
+.painel li:nth-child(2n):hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
+
+
+
+
 
 
 
